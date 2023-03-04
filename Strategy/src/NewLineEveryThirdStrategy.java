@@ -5,6 +5,7 @@ public class NewLineEveryThirdStrategy<T> extends AbstractConverter<T>{
     private int index = 0;
     @Override
     public void listToString(List<T> list) {
+        resetBuilder();
         for(index = 0; index < list.size(); index++){
             T value = list.get(index);
             appendNewlineEveryThird(value);

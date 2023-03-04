@@ -22,9 +22,6 @@ public class Context {
     }
 
     public void useStrategy(){
-        if(this.converter == null)
-            throw new NullPointerException("converter == null");
-
         converter.listToString(values);
     }
 
